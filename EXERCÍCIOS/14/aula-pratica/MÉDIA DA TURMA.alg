@@ -1,0 +1,34 @@
+algoritmo "TURMA"
+
+var
+   NOME: VETOR[1..4] DE CARACTERE //PORQUE SÃO NOMES
+   N1: VETOR[1..4] DE REAL //NOTAS PODEM SER FRACIONADAS
+   N2: VETOR[1..4] DE REAL
+   MEDIA: VETOR[1..4] DE REAL
+   SM, MT: REAL //SM = SOMA DAS MÉDIAS| MT = MÉDIA DA TURMA| PARA TER A MÉDIA DA TURMA
+   I, TOT: INTEIRO //PODERIA SER "C" OU "I"| TOT = TOTAL DE ALUNOS ACIMA DA MÉDIA
+inicio
+      PARA I <- 1 ATE 4 FACA
+           ESCREVAL("ALUNO ", I) //FICA ALUNO 1, 2, 3, 4
+           ESCREVA("NOME: ")
+           LEIA(NOME[I]) //LERÁ O VETOR "NOME" NA POSIÇÃO "I"
+           ESCREVA("PRIMEIRA NOTA: ")
+           LEIA(N1[I]) //A 1ª NOTA FICARÁ NA POSIÇÃO "I"
+           ESCREVA("SEGUNDA NOTA: ")
+           LEIA(N2[I]) //FICARÁ NO VETOR "N2" POSIÇÃO "I"
+           MEDIA[I] <- (N1[I]+N2[I]) / 2 //CALCULAR A MÉDIA
+           SM <- SM + MEDIA[I] //SOMA DA MÉDIA + MÉDIA DO ALUNO
+      FIMPARA
+      MT <- SM / 4 //MT RECEBE A SM DIVIDIDO PELO Nº DE ALUNOS
+      LIMPATELA
+      ESCREVAL("------------------")
+      ESCREVAL("LISTAGEM DE ALUNOS")
+      ESCREVAL("------------------")
+      PARA I <- 1 ATE 4 FACA
+           ESCREVAL(NOME[I]:14, MEDIA[I]:4:1)
+           SE (MEDIA[I] > MT) ENTAO
+              TOT <- TOT + 1
+           FIMSE
+      FIMPARA //ESSE ":14" UTILIZA ATÉ 14 ESPAÇOS NA LINHA
+      ESCREVAL("AO TODO TEMOS", TOT, " ALUNOS ACIMA DA MÉDIA DA TURMA, QUE É:", MT:4:1)
+fimalgoritmo

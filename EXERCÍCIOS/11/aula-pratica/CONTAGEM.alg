@@ -1,0 +1,14 @@
+algoritmo "CONTAGEM"
+var
+   CONT, VALOR: INTEIRO // CONT = CONTAR
+inicio
+      ESCREVA("DIGITE UM VALOR: ")
+      LEIA(VALOR)
+      SE(VALOR % 2=1) ENTAO // SE VALOR FOR IGUAL A 1 QUE É ÍMPAR
+               VALOR <- VALOR -1 // TIRA 1 DE VALOR P/ VIRAR PAR
+      FIMSE
+      PARA CONT <- VALOR ATE 0 PASSO -2 FACA // PASSO = PULANDO
+           ESCREVAL(CONT)
+      FIMPARA
+fimalgoritmo
+

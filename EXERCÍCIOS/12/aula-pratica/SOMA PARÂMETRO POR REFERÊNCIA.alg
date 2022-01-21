@@ -1,0 +1,21 @@
+algoritmo "SOMA PARÂMETRO POR REFERÊNCIA"
+//PASSAGEM DE PARÂMETRO:
+//POR REFERÊNCIA: O PARÂMETRO REFERE-SE AUTO. AO VALOR DA VARIÁVEL ORIGINAL
+var
+   X, Y: INTEIRO //COM O "VAR" "A" E "B" Ñ SÃO MAIS VALORES
+PROCEDIMENTO SOMA (VAR A, B: INTEIRO) //A E B SAÕ REFERÊNCIAS
+INICIO
+      A<- A + 1
+      B <- B + 2
+      ESCREVAL("VALOR DE A =", A)
+      ESCREVAL("VALOR DE B =", B)
+      ESCREVAL("SOMA A + B =", A+B)
+FIMPROCEDIMENTO
+inicio
+      X <- 4
+      Y <- 8
+      SOMA (X, Y)
+      ESCREVAL("VALOR DE X =", X)
+      ESCREVAL("VALOR DE Y =", Y)
+
+fimalgoritmo

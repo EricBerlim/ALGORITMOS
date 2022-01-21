@@ -1,0 +1,18 @@
+algoritmo "IMC" //É O PESO DIVIDIDO PELA ALTURA AO QUADRADO
+
+var
+   P, A, IMC: REAL //SÃO REAIS PQ P E A PODEM SER FRACIONADOS
+inicio
+      ESCREVA("DIGITE O SEU PESO: ")
+      LEIA(P)
+      ESCREVA("DIGITE A SUA ALTURA(com o ponto): ")
+      LEIA(A)
+      IMC <- P / (A ^ 2) //PESO DIVIDIDO PELA ALTURA AO QUADRADO
+      ESCREVAL("IMC: ", IMC:5:2)
+
+      SE (IMC >= 18.5) e (IMC < 25) ENTAO //IDEAL:IMC >18.5 E < 25
+         ESCREVA("PARABÉNS! VOCÊ ESTÁ NO SEU PESO IDEAL.")
+      SENAO
+         ESCREVA("VOCÊ NÃO ESTÁ NO SEU PESO IDEAL.")
+      FIMSE
+fimalgoritmo

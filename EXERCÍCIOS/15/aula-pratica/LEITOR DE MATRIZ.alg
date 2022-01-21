@@ -1,0 +1,23 @@
+algoritmo "LEITOR DE MATRIZ"
+//PREENCHER UMA MATRIZ 3X2 COM VALORES VIA TECLADO
+//VETOR DE 3 LINHAS E 2 COLUNAS
+var
+   MAT: VETOR[1..3, 1..2] DE INTEIRO //MAT = MATRIZ
+   L, C: INTEIRO
+inicio
+      PARA L <- 1 ATE 3 FACA
+          PARA C <- 1 ATE 2 FACA
+          ESCREVA("DIGITE O VALOR DA POSIÇÃO [", L, ",", C, " ]: ")
+          LEIA (MAT[L,C]) //LER MATRIZ NA POSIÇÃO "L" E "C"
+          FIMPARA
+      FIMPARA
+
+//ESTRUTURA PARA EXIBIÇÃO DE MATRIZ
+      PARA L <- 1 ATE 3 FACA
+          PARA C <- 1 ATE 2 FACA
+               ESCREVA(MAT[L,C]:4) //EXIBE O VALOR COM 4 CASAS
+          FIMPARA
+          ESCREVAL()// <- PARA MOSTRAR O VALOR COMO UMA MATRIZ
+      FIMPARA
+
+fimalgoritmo

@@ -1,0 +1,21 @@
+algoritmo "PRÓXIMO FIBONACCI"
+//POR REFERÊNCIA
+var
+   C, T1, T2 : INTEIRO
+PROCEDIMENTO PROXIMOFIBONACCI (VAR A, B: INTEIRO)
+VAR C: INTEIRO //VARIÁVEL "C" (LOCAL)
+INICIO
+      C := A + B //"A" REFENCIA "T1" E "B" REFERENCIA "T2"
+      Escreva (C)
+      A := B //"A" RECEBE O VALOR DE "B", QUE É 1
+      B := C //"B" RECEBE O VALOR DE "C", QUE É 1
+FIMPROCEDIMENTO
+inicio
+      T1 <- 0
+      ESCREVA (T1)
+      T2 <- 1
+      ESCREVA (T2)
+      PARA C := 3 ATE 10 FACA //C = CONTADOR VARIÁVEL (GLOBAL)
+           PROXIMOFIBONACCI (T1, T2) //VAI PARA "PROCEDIMENTO"
+      FIMPARA
+fimalgoritmo

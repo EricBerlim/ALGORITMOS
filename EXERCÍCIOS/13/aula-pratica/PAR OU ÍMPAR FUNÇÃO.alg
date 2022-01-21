@@ -1,0 +1,22 @@
+algoritmo "PAR OU ÍMPAR COM FUNÇÃO"
+
+var
+   N: INTEIRO //N = NÚMERO
+   R: CARACTERE //R = RESULTADO
+
+FUNCAO PAROUIMPAR(V: INTEIRO): CARACTERE //RETORNA AO "CARACTERE"
+INICIO
+      SE (V%2=0) ENTAO //" % " É IGUAL A "RESTO DA DIVISÃO POR"
+         RETORNE "PAR"
+      SENAO
+           RETORNE "ÍMPAR"
+      FIMSE
+FIMFUNCAO
+
+inicio
+      ESCREVA("DIGITE UM NÚMERO: ")
+      LEIA(N)
+      R <- PAROUIMPAR(N) //O RESULTADO SERÁ PAR OU ÍMPAR
+      ESCREVA("O NÚMERO", N, " É UM VALOR ", R)
+
+fimalgoritmo

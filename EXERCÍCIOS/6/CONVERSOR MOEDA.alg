@@ -1,0 +1,9 @@
+algoritmo "CONVERSOR REAL X DÓLAR"
+var
+   REAIS, DOLARES: REAL
+inicio
+      ESCREVA ("QUANTOS REAIS EU TENHO? R$")
+      LEIA (REAIS)
+      DOLARES <- REAIS /5.30 //DIVIDIR REAIS PELO VALOR DO DÓLAR
+      ESCREVA ("TEREI US$", DOLARES:5:2)
+fimalgoritmo
