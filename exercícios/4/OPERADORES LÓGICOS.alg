@@ -1,0 +1,10 @@
+algoritmo "OPERADORES LÓGICOS"
+          //SEMPRE VÃO RESULTAR EM UM VALOR LÓGICO "V" OU "F".
+var
+   A, B, C: INTEIRO
+inicio
+      A <- 2
+      B <- 3
+      C <- 5
+      ESCREVA ((A=B) OU (C>A))
+fimalgoritmo

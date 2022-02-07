@@ -1,0 +1,21 @@
+algoritmo "FATORIAL"
+
+var
+   CONT, N, F: INTEIRO // F = FATORIAL
+   RESP: CARACTERE
+inicio
+REPITA // TUDO ISSO IRÁ  REPETIR
+      ESCREVA("DIGITE UM NÚMERO: ")
+      LEIA(N)
+      CONT <- N // CONTADOR COMEÇA COM N
+      F <- 1 // FATORIAL VAI COMEÇAR COM 1
+      REPITA // E VAI REPETIR
+             F <- F * CONT
+             CONT <- CONT -1 // A CADA INTERAÇÃO VAI RETIRAR 1 VALOR DO CONT
+      ATE (CONT < 1) // ATÉ QUE O CONT SEJA MENOR QUE 1
+      ESCREVAL("O VALOR DO FATORIAL DE", N, " É IGUAL A", F)
+      ESCREVA("QUER CONTINUAR? [S/N]")
+      LEIA(RESP)
+      LIMPATELA
+ATE (RESP = "N") // ATÉ QUE A RESPOSTA SEJA IGUAL A " NÃO "
+fimalgoritmo

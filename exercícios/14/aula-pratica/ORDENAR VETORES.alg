@@ -1,0 +1,26 @@
+algoritmo "ORDENA VETOR"
+//ORDENA UM VETOR INDEPENDENTE DE SEU TAMANHO
+var
+   VET: VETOR[1..4] DE INTEIRO
+   I, J, AUX: INTEIRO //CONTAD: 2 VARIÁVEIS INTEIRAS I E J
+inicio
+      PARA I <- 1 ATE 4 FACA //ESSE "PARA" É PARA LER O VETOR
+           ESCREVA("DIGITE UM VALOR: ")
+           LEIA(VET[I])
+      FIMPARA
+      
+      PARA I <- 1 ATE 3 FACA //3 = TOTAL DE CASAS (4) MENOS 1
+           PARA J <- I + 1 ATE 4 FACA //O 2º(J) VAI COMEÇAR DO PRÓXIMO (I+1) E VAI ATÉ A ÚLTIMA CASA (4)
+                SE (VET[I] > VET[J]) ENTAO //SE MEU VETOR "I" FOR MAIOR QUE "J" -> REALIZA A TROCA
+//VOU REALIZAR A TROCA CASO O ANTERIOR (I) SEJA MAIOR QUE O SEGUINTE (J)
+                AUX <- VET[I] //AUXILIAR RECEBERÁ O 1º VALOR
+                VET[I] <- VET[J] //1º VALOR RECEBERÁ O 2º
+                VET[J] <- AUX //2º VALOR RECEBERÁ O AUXILIAR
+                FIMSE
+           FIMPARA
+      FIMPARA
+//ESTRUTURA PARA MOSTRAR O VETOR
+      PARA I <- 1 ATE 4 FACA
+           ESCREVA("{", VET[I], "}")
+      FIMPARA
+fimalgoritmo

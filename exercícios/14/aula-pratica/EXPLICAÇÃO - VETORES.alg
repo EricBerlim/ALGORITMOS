@@ -1,0 +1,17 @@
+algoritmo "VETORES"
+//V = VALORES
+//VETOR DE 6 POSIÇÕES DE INTEIRO
+var
+   V: VETOR[1..6] DE INTEIRO
+   C: INTEIRO //C = VARIÁVEL CONTADORA
+inicio
+      PARA C <- 1 ATE 6 FACA //CONTADOR DE 1 ATÉ 6
+           ESCREVA("DIGITE O", C, "º VALOR: ")
+           LEIA(V[C]) //LER O VETOR "V" NA POSIÇÃO "CONTADOR"
+      FIMPARA
+
+//ESTRUTURA PARA MOSTRAR O VETOR NA TELA:
+      PARA C <- 1 ATE 6 FACA
+           ESCREVA("{",V[C],"}")
+      FIMPARA
+fimalgoritmo

@@ -1,0 +1,7 @@
+algoritmo "PRIMEIRO"
+var
+   MSG: CARACTERE //ESTA VARIÁVEL REPRODUZ O QUE ESTÁ EM ASPAS.
+inicio
+      MSG <- ("OLÁ, MUNDO!")
+      ESCREVA(MSG) //APÓS DECLARAR A VARIÁVEL, VAI REPETIR.
+fimalgoritmo
